@@ -18,8 +18,8 @@ fermi-lat-data:
       roicut: "yes"
     gtbin:
       algorithm: CCUBE
-      nxpix: &nxpix 200
-      nypix: &nypix 200
+      nxpix: &nxpix 350
+      nypix: &nypix 350
       binsz: &binsz 0.02
       xref: &xref 266.25888553
       yref: &yref -1.21964555

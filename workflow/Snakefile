@@ -10,3 +10,9 @@ module fermi_lat_data_workflow:
     config: config["fermi-lat-data"]
 
 use rule * from fermi_lat_data_workflow as fermi_lat_data_*
+
+include: "rules/run-jolideco.smk"
+
+rule all:
+    input: expand("results/{config_name}/jolideco/{config_name}-result-jolideco.fits", config_name=config["fermi-lat-data"]["name"])
+    default_target: True
