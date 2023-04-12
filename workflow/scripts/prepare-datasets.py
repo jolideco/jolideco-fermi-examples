@@ -106,6 +106,9 @@ def reduce_datasets(datasets):
         maps = Maps(**est.estimate_fit_input_maps(dataset=dataset))
         maps["psf"] = maps.pop("kernel")
 
+        maps.pop("norm")
+        maps.pop("mask")
+
         cutout_kwargs = {"position": position, "width": 3.0 * u.deg}
 
         datasets_jolideco[dataset.name] = cutout_maps(maps, **cutout_kwargs)
