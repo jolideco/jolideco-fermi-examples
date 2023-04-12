@@ -11,6 +11,7 @@ module fermi_lat_data_workflow:
 
 use rule * from fermi_lat_data_workflow as fermi_lat_data_*
 
+include: "rules/prepare-datasets.smk"
 include: "rules/run-jolideco.smk"
 
 rule all:
