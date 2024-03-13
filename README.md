@@ -1,4 +1,2 @@
-# snakemake-workflow-template
-My personal Snakemake workflow template.
-
-There is also the [official template](https://github.com/snakemake-workflows/snakemake-workflow-template) but I prefer to have the full directory structure pre-defined as shown in the [snakemake docs](https://snakemake.readthedocs.io/en/stable/snakefiles/deployment.html#use-with-modules).  
+# Jolideco Fermi-LAT example
+This repository contains an example analyis of Fermi-LAT data using [Jolideco](https://github.com/jolideco/jolideco).
